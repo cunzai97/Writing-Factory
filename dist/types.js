@@ -1,0 +1,2 @@
+// ─── Novel Writer Types ────────────────────────
+export {};

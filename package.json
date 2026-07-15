@@ -1,0 +1,19 @@
+{
+  "name": "novel-writer",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "小说生成 CLI —— 逐段写作，上下文感知，可分发工具",
+  "bin": {
+    "novel": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod +x dist/cli.js",
+    "start": "node dist/cli.js",
+    "dev": "tsx src/cli.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.1",
+    "tsx": "4.19",
+    "typescript": "5.7"
+  }
+}
