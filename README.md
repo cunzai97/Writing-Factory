@@ -150,9 +150,21 @@ my-book/
     └── novel.txt           # build 生成的成品
 ```
 
-## Agent 配合
+## Skill 安装
 
-本项目配有一个 [Agent Skill](.pi/skills/novel-writing/SKILL.md)。加载此 skill 后，Agent 成为创作 partner：讨论立意 → 构建世界观和人物 → 编排章节骨架 → 生成 novel.json → 调用 CLI 写作 → 审稿修订。
+将项目根目录的 `SKILL.md` 安装到你的 Agent 技能目录：
+
+```bash
+# pi（全局）
+mkdir -p ~/.pi/agent/skills/novel-writing
+cp SKILL.md ~/.pi/agent/skills/novel-writing/
+
+# 或项目级安装
+mkdir -p .pi/skills/novel-writing
+cp SKILL.md .pi/skills/novel-writing/
+```
+
+安装后，Agent 自动识别并在创作任务中加载此 skill，作为策划 partner 负责：讨论立意 → 构建世界观和人物 → 编排章节骨架 → 生成 novel.json → 调用 CLI 写作 → 审稿修订。
 
 ## Tips
 
